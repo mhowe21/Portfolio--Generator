@@ -1,0 +1,30 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "Generate An HTML profile page ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "startDev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhowe21/Profile-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhowe21/Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/mhowe21/Profile-Generator#readme",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
