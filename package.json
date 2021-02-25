@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "startDev": "nodemon server.js"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/mhowe21/Profile-Generator#readme",
   "dependencies": {
+    "aws-sdk": "^2.851.0",
     "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
