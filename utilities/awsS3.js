@@ -1,29 +1,22 @@
 const AWS = require("aws-sdk");
 AWS.config.update({ region: process.env.AWS_REGION });
-const fs = require("fs");
 const { resolve } = require("path");
 require("dotenv").config();
 //let file = "testFile.jpg";
 
+const s3 = new AWS.S3({
+  accessKeyId: process.env.AWS_ID,
+  secretAccessKey: process.env.AWS_SEC,
+});
 class s3Handle {
-  constructor(bucketName) {
-    this.ID = process.env.AWS_ID;
-    this.SECRET = process.env.AWS_SEC;
-
-    this.BUCKET_NAME = bucketName;
-
-    this.s3 = new AWS.S3({
-      accessKeyId: this.ID,
-      secretAccessKey: this.SECRET,
-    });
-  }
+  constructor() {}
 
   async createBucket() {
     return new Promise(function (resolve, reject) {
       const params = {
         Bucket: this.BUCKET_NAME,
       };
-      this.s3.createBucket(params, function (err, data) {
+      s3.createBucket(params, function (err, data) {
         if (err) {
           reject(err);
         } else {
@@ -32,32 +25,33 @@ class s3Handle {
       });
     });
   }
-  async uploadFile() {
+  async uploadFile(bucketName, fileName, fileItem) {
     return new Promise(function (resolve, reject) {
-      const fileItem = fs.readFileSync(file);
+      //const fileItem = fs.readFileSync(file);
 
       let params = {
-        Bucket: this.BUCKET_NAME,
-        Key: file,
+        Bucket: bucketName,
+        Key: fileName,
         Body: fileItem,
+        ACL: "public-read",
       };
 
-      this.s3.upload(params, (err, data) => {
+      s3.upload(params, (err, data) => {
         if (err) {
           reject(err);
         } else {
-          resolve(data.Location);
+          resolve(data);
         }
       });
     });
   }
-  async getFile() {
+  async getFile(bucketName, fileName) {
     return new Promise(function (resolve, reject) {
       let params = {
-        Bucket: this.BUCKET_NAME,
-        Key: file,
+        Bucket: bucketName,
+        Key: fileName,
       };
-      this.s3.getObject(params, function (err, data) {
+      s3.getObject(params, function (err, data) {
         if (err) {
           reject(err);
         } else {
