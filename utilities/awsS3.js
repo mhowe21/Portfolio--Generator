@@ -33,13 +33,14 @@ class s3Handle {
         Bucket: bucketName,
         Key: fileName,
         Body: fileItem,
+        ACL: "public-read",
       };
 
       s3.upload(params, (err, data) => {
         if (err) {
           reject(err);
         } else {
-          resolve(data.Location);
+          resolve(data);
         }
       });
     });
