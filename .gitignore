@@ -2,3 +2,5 @@
 .DS_store
 .VS_code
 node_modules
+index.html
+style
