@@ -26,6 +26,22 @@ UserContent.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    user_profile_img_1: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    user_profile_img_2: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    user_profile_img_3: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    user_profile_img_4: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     sequelize,
