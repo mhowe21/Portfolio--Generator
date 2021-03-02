@@ -45,7 +45,7 @@ router.post("/upload/projectIMG/:id", async (req, res) => {
       );
       userProfileIMG = `user_profile_img_${req.params.id}`;
       UserContent.update(
-        { user_profile_img_1: inFile.Location },
+        { [userProfileIMG]: inFile.Location },
         {
           where: {
             id: req.session.currentContentID,
