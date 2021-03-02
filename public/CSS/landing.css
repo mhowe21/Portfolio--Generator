@@ -126,6 +126,7 @@ section {
     background-position: 80%;
 }
 
+
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -258,13 +259,18 @@ section {
 /* What We... */
 
 
+
 .intro p {
     line-height: 1.7;
-    color: #39a6b2;
+    color: black;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
+}
+
+.intro h2 {
+    color: black;
 }
 
 .steps {
@@ -273,7 +279,7 @@ section {
 
 .section-title {
     font-size: 55px 48px;
-    color: #024e76;
+    color: black;
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
