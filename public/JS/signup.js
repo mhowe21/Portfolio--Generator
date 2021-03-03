@@ -1,4 +1,3 @@
-console.log("script loaded");
 const loginButton = document.querySelector("#submit-button");
 
 loginButton.addEventListener("click", async (e) => {
@@ -8,10 +7,6 @@ loginButton.addEventListener("click", async (e) => {
   const username = document.querySelector("#username").value.trim();
   const email = document.querySelector("#email").value.trim();
   const password = document.querySelector("#password").value.trim();
-
-  console.log(username);
-  console.log(email);
-  console.log(password);
 
   if (email && password && username) {
     const response = await fetch("/api/v1/users", {
