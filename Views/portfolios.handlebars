@@ -1,0 +1,12 @@
+{{#if info.length}}
+<section>
+    <h2>Prior portfolios</h2>
+    <ol>
+        {{#each info as |info|}}
+        <li>
+            <a href="dashboard/portfolio/{{info.id}}" class="portfolio">Prior portfolio{{info.id}}</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
