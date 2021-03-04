@@ -12,8 +12,6 @@ body {
 .heading {
     display: flex;
     flex-direction: row;
-    /* justify-content: left; */
-    /* padding: 20px; */
     margin: auto;
     font-family: 'garamond';
     color: #010101;
@@ -35,7 +33,7 @@ body {
     justify-content: left;
     /* padding: 20px; */
     font-family: 'garamond';
-    color: #ba411f;
+    color: whitesmoke;
     width: 65%;
     margin-left: 20px;
 }
@@ -44,7 +42,7 @@ body {
     display: flex;
     flex-direction: row;
     vertical-align: bottom;
-    color: #9197a1;
+    color: whitesmoke;
     padding: 20px;
     width: 35%;
 }
@@ -85,6 +83,7 @@ p {
 
 .about-me-heading {
     margin-top: 10px;
+    color: #bfc1c2;
 }
 
 .profile-image {
@@ -115,6 +114,7 @@ p {
 .project-heading {
     display: flex;
     justify-content: left;
+    color: #bfc1c2;
 }
 
 .card-row {
@@ -126,7 +126,6 @@ p {
 .project-card {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
