@@ -54,7 +54,24 @@ router.post("/upload/projectIMG/:id", async (req, res) => {
       ).then((data) => {
         res.json(data);
       });
+    } else {
+      res.json("no file found");
     }
+  } else if (!req.session.currentContentID) {
+    let inFile = await s3Obj.uploadFile(
+      bucketName,
+      req.files.img.name,
+      req.files.img.data
+    );
+    let userProfileIMG = `user_profile_img_${req.params.id}`;
+    UserContent.create({
+      user_id: req.session.user_id,
+      [userProfileIMG]: inFile.Location,
+    }).then((data) => {
+      req.session.currentContentID = data.id;
+      console.log(req.session.currentContentID);
+      res.json(data);
+    });
   }
 });
 

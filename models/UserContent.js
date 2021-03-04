@@ -42,6 +42,22 @@ UserContent.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    portfolio_name: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    portfolio_email: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    portfolio_github_link: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    portfolio_linkedin_link: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     sequelize,
