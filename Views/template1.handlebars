@@ -1,122 +1,120 @@
-<body>
-    <div class="heading" id="heading">
-        <div class="heading-container" id="heading-container">
-            <div class="name" id="name">
-                <h1>{{ info.portfolio_name }}</h1>
-            </div>
-            <div class="contact" id="contact">
-                <a href="mailto:{{ info.portfolio_email }}">
-                    <h4>Contact</h4>
-                </a>
-                <a href="{{ info.portfolio_github_link }}">
-                    <h4>Github</h4>
-                </a>
-                <a href="{{ info.portfolio_linkedin_link }}">
-                    <h4>LinkedIn</h4>
-                </a>
+<div class="heading" id="heading">
+    <div class="heading-container" id="heading-container">
+        <div class="name" id="name">
+            <h1>{{ info.portfolio_name }}</h1>
+        </div>
+        <div class="contact" id="contact">
+            <a href="mailto:{{ info.portfolio_email }}">
+                <h4>Contact</h4>
+            </a>
+            <a href="{{ info.portfolio_github_link }}">
+                <h4>Github</h4>
+            </a>
+            <a href="{{ info.portfolio_linkedin_link }}">
+                <h4>LinkedIn</h4>
+            </a>
 
+        </div>
+    </div>
+</div>
+<sec class="container" id="container">
+    <div class="about-me" id="about-me">
+        <div class="about-me-text" id="about-me-text">
+            <div class="about-me-heading" id="about-me-heading">
+                <h2>About Me</h2>
+            </div>
+            <p>
+                <!-- Insert about me text here -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="profile-image" id="profile-image">
+            <!-- Insert image here -->
+            <img src={{info.avatar_image_URI}}>
+            <p>image placeholder</p>
+        </div>
+    </div>
+
+    <!-- <div class ="completed" id="completed"> -->
+    <div class="projects" id="projects">
+        <div class="project-heading" id="project-heading">
+            <h3>Completed Work</h3>
+        </div>
+        <div class="card-row" id="card-row">
+            <div class="project-card" id="project-card">
+                <h4>Project 1</h4>
+                <div class="project-image" id="project-image">
+                    <!-- Insert project 1 image here -->
+                    <h5>project 1 image placeholder</h5>
+                </div>
+            </div>
+            <div class="project-card" id="project-card">
+                <h4>Project 2</h4>
+                <div class="project-image" id="project-image">
+                    <!-- Insert project 2 image here -->
+                    <h5>project 2 image placeholder</h5>
+                </div>
+            </div>
+            <div class="project-card" id="project-card">
+                <h4>Project 3</h4>
+                <div class="project-image" id="project-image">
+                    <!-- Insert project 3 image here -->
+                    <h5>project 3 image placeholder</h5>
+                </div>
+            </div>
+            <div class="project-card" id="project-card">
+                <h4>Project 4</h4>
+                <div class="project-image" id="project-image">
+                    <!-- Insert project 4 image here -->
+                    <h5>project 4 image placeholder</h5>
+                </div>
+            </div>
+            <div class="project-card" id="project-card">
+                <h4>Project 5</h4>
+                <div class="project-image" id="project-image">
+                    <!-- Insert project 5 image here -->
+                    <h5>project 5 image placeholder</h5>
+                </div>
             </div>
         </div>
     </div>
-    <sec class="container" id="container">
-        <div class="about-me" id="about-me">
-            <div class="about-me-text" id="about-me-text">
-                <div class="about-me-heading" id="about-me-heading">
-                    <h2>About Me</h2>
-                </div>
-                <p>
-                    <!-- Insert about me text here -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="profile-image" id="profile-image">
-                <!-- Insert image here -->
-                {{info.avatar_image_URI}}
-                <p>image placeholder</p>
-            </div>
-        </div>
 
-        <!-- <div class ="completed" id="completed"> -->
-        <div class="projects" id="projects">
-            <div class="project-heading" id="project-heading">
-                <h3>Completed Work</h3>
+    <!-- <div class="in-progress" id="in-progress">  -->
+    <div class="projects" id="projects">
+        <div class="project-heading" id="project-heading">
+            <h3>Work in Progress</h3>
+        </div>
+        <div class="card-row" id="card-row">
+            <div class="project-card" id="project-card">
+                <h4>Work in Progress </h4>
+                <div class="project-image" id="project-image">
+                    <!-- Insert in progress 1 image here -->
+                    <h5>inprogress 1 image placeholder</h5>
+                </div>
             </div>
-            <div class="card-row" id="card-row">
-                <div class="project-card" id="project-card">
-                    <h4>Project 1</h4>
-                    <div class="project-image" id="project-image">
-                        <!-- Insert project 1 image here -->
-                        <h5>project 1 image placeholder</h5>
-                    </div>
-                </div>
-                <div class="project-card" id="project-card">
-                    <h4>Project 2</h4>
-                    <div class="project-image" id="project-image">
-                        <!-- Insert project 2 image here -->
-                        <h5>project 2 image placeholder</h5>
-                    </div>
-                </div>
-                <div class="project-card" id="project-card">
-                    <h4>Project 3</h4>
-                    <div class="project-image" id="project-image">
-                        <!-- Insert project 3 image here -->
-                        <h5>project 3 image placeholder</h5>
-                    </div>
-                </div>
-                <div class="project-card" id="project-card">
-                    <h4>Project 4</h4>
-                    <div class="project-image" id="project-image">
-                        <!-- Insert project 4 image here -->
-                        <h5>project 4 image placeholder</h5>
-                    </div>
-                </div>
-                <div class="project-card" id="project-card">
-                    <h4>Project 5</h4>
-                    <div class="project-image" id="project-image">
-                        <!-- Insert project 5 image here -->
-                        <h5>project 5 image placeholder</h5>
-                    </div>
+            <div class="project-card" id="project-card">
+                <h4>Work in Progress </h4>
+                <div class="project-image" id="project-image">
+                    <!-- Insert inprogress 2 image here -->
+                    <h5>in progress 2 image placeholder</h5>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- <div class="in-progress" id="in-progress">  -->
-        <div class="projects" id="projects">
-            <div class="project-heading" id="project-heading">
-                <h3>Work in Progress</h3>
-            </div>
-            <div class="card-row" id="card-row">
-                <div class="project-card" id="project-card">
-                    <h4>Work in Progress </h4>
-                    <div class="project-image" id="project-image">
-                        <!-- Insert in progress 1 image here -->
-                        <h5>inprogress 1 image placeholder</h5>
-                    </div>
-                </div>
-                <div class="project-card" id="project-card">
-                    <h4>Work in Progress </h4>
-                    <div class="project-image" id="project-image">
-                        <!-- Insert inprogress 2 image here -->
-                        <h5>in progress 2 image placeholder</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="unique" id="unique">
+        <h3>Something Unique About You</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </p>
+    </div>
 
-        <div class="unique" id="unique">
-            <h3>Something Unique About You</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-        </div>
-
-    </sec>
-</body>
+</sec>
