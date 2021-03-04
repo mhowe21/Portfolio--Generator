@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #444f5e;
+    background-color: #353839;
 }
 
 /* Header Style Start */
@@ -26,6 +26,7 @@ body {
     justify-content: center;
     width: 93%;
     margin: auto;
+    margin-top: 20px;
 }
 
 .name {
@@ -34,7 +35,7 @@ body {
     justify-content: left;
     /* padding: 20px; */
     font-family: 'garamond';
-    color: #071425;
+    color: #ba411f;
     width: 65%;
     margin-left: 20px;
 }
@@ -42,15 +43,10 @@ body {
 .contact {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     vertical-align: bottom;
-    /* color: #0B084D; */
     color: #9197a1;
     padding: 20px;
     width: 35%;
-    /* border: 5px; */
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .contact h4 {
@@ -60,7 +56,6 @@ body {
 }
 
 p {
-    /* width: 95%; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -79,9 +74,8 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* padding: 20 px; */
     width: 90%;
-    background-color: lightslategrey;
+    /* background-color: lightslategrey; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -109,10 +103,9 @@ p {
 .projects {
     display: flex;
     justify-content: center;
-    /* padding: 20 px; */
     flex-direction: column;
     width: 90%;
-    background-color: lightslategrey;
+    /* background-color: lightslategrey; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
@@ -152,9 +145,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 20 px; */
     width: 90%;
-    background-color: lightslategrey;
+    /* background-color: lightslategrey; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
