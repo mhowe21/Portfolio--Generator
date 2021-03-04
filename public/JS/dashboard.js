@@ -47,7 +47,7 @@ function submitForm() {
             .then((response) => response.json())
             .then((result) => {
               console.log(result);
-              resolve(result);
+              resolve(document.location.replace("/portfolios"));
             })
             .catch((err) => {
               console.log(err);
@@ -75,7 +75,7 @@ function submitForm() {
         .then((response) => response.json())
         .then((result) => {
           console.log(result);
-          resolve(result);
+          resolve(document.location.replace("/portfolios"));
         })
         .catch((err) => {
           console.log(err);
