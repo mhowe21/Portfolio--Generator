@@ -14,6 +14,7 @@ router.get("/dashboard", (req, res) => {
 });
 
 router.get("/portfolios", (req, res) => {
+  console.log(req.session.user_id);
   UserContent.findAll({
     where: {
       user_id: req.session.user_id,
@@ -29,6 +30,20 @@ router.get("/portfolios", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+router.get("/portfolios/:id", (req, res) => {
+  UserContent.findOne({
+    where: {
+      id: req.params.id,
+      user_id: req.session.user_id,
+    },
+  }).then((data) => {
+    const info = data.get({ plain: true });
+    console.log(info);
+    res.render("template1", { info });
+    //res.json(info);
+  });
 });
 
 module.exports = router;

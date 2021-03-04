@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #444f5e;
+}
+
+/* Header Style Start */
+.heading {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: left; */
+  /* padding: 20px; */
+  margin: auto;
+  font-family: "garamond";
+  color: #010101;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  width: 93%;
+  margin: auto;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  /* padding: 20px; */
+  font-family: "garamond";
+  color: #071425;
+  width: 65%;
+  margin-left: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  vertical-align: bottom;
+  /* color: #0B084D; */
+  color: #9197a1;
+  padding: 20px;
+  width: 35%;
+  /* border: 5px; */
+  /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.contact h4 {
+  display: flex;
+  vertical-align: bottom;
+  margin: auto;
+}
+
+p {
+  /* width: 95%; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding: 20 px; */
+  width: 90%;
+  background-color: lightslategrey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 5px;
+}
+
+.about-me-heading {
+  margin-top: 10px;
+}
+
+.profile-image {
+  width: 30%;
+  min-height: 30%;
+  max-height: 30%;
+}
+
+.about-me-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .completed { */
+.projects {
+  display: flex;
+  justify-content: center;
+  /* padding: 20 px; */
+  flex-direction: column;
+  width: 90%;
+  background-color: lightslategrey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  border: 5px;
+}
+
+.project-heading {
+  display: flex;
+  justify-content: left;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px;
+  border-style: solid;
+}
+
+.profile-image {
+  /* adjust width and height of pic */
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.unique {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 20 px; */
+  width: 90%;
+  background-color: lightslategrey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  border: 5px;
+}
