@@ -1,53 +1,86 @@
-var div = document.createElement('div');
-return ('draggable' in div) || ('ondragstart' in div && 'ondrop' in div)
+// get elements
+const profileName = document.querySelector("#name");
+const email = document.querySelector("#email");
+const github = document.querySelector("#github");
+const linkedin = document.querySelector("#linkedin");
+const file = document.querySelector("#file");
+const submit = document.querySelector("#submit-form");
 
-return 'FormData' in window;
+submit.addEventListener("click", async (e) => {
+  console.log("button pressed");
+  await submitForm();
+});
 
-'FileReader' in window
+function submitForm() {
+  return new Promise((resolve, reject) => {
+    let fileUpload = file.files[0];
 
-var isAdvancedUpload = function() {
-    var div = document.createElement('div');
-    return (('draggable' in div) || ('ondragstart' in div && 'ondrop' in div)) && 'FormData' in window && 'FileReader' in window;
-  }();
+    if (fileUpload) {
+      let formData = new FormData();
 
-  if (isAdvancedUpload) {
-    // ...
-  }
+      formData.append("img", fileUpload);
+      fetch("/api/v1/files/upload/profileIMG", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          return response.json();
+        })
+        .then((result) => {
+          let headers = new Headers();
 
-  var $form = $('.box');
+          headers.append("Content-Type", "application/json");
+          let body = JSON.stringify({
+            name: profileName.value.trim(),
+            email: email.value.trim(),
+            github: github.value.trim(),
+            linkedin: linkedin.value.trim(),
+          });
 
-  if (isAdvancedUpload) {
-    $form.addClass('has-advanced-upload');
-  }
+          let requestOptions = {
+            method: "POST",
+            headers: headers,
+            body: body,
+          };
 
-  if (isAdvancedUpload) {
-
-    var droppedFiles = false;
-  
-    $form.on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-    })
-    .on('dragover dragenter', function() {
-      $form.addClass('is-dragover');
-    })
-    .on('dragleave dragend drop', function() {
-      $form.removeClass('is-dragover');
-    })
-    .on('drop', function(e) {
-      droppedFiles = e.originalEvent.dataTransfer.files;
-    });
-  
-  }
-
-  $form.on('submit', function(e) {
-    if ($form.hasClass('is-uploading')) return false;
-  
-    $form.addClass('is-uploading').removeClass('is-error');
-  
-    if (isAdvancedUpload) {
-      // ajax for modern browsers
+          fetch("/api/v1/files/upload/data", requestOptions)
+            .then((response) => response.json())
+            .then((result) => {
+              console.log(result);
+              resolve(result);
+            })
+            .catch((err) => {
+              console.log(err);
+              reject(err);
+            });
+        });
     } else {
-      // ajax for legacy browsers
+      let headers = new Headers();
+
+      headers.append("Content-Type", "application/json");
+      let body = JSON.stringify({
+        name: profileName.value.trim(),
+        email: email.value.trim(),
+        github: github.value.trim(),
+        linkedin: linkedin.value.trim(),
+      });
+
+      let requestOptions = {
+        method: "POST",
+        headers: headers,
+        body: body,
+      };
+
+      fetch("/api/v1/files/upload/data", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result);
+          resolve(result);
+        })
+        .catch((err) => {
+          console.log(err);
+          reject(err);
+        });
     }
   });
+}

@@ -16,7 +16,7 @@
                 <a href="dashboard1">create</a>
             </li>
             <li>
-                <a href="dashboard3">my sites</a>
+                <a href="/portfolios">my sites</a>
             </li>
             <li>
                 <a href="/" id="logout">sign out</a>
@@ -44,10 +44,10 @@
             <input type="text" placeholder="" name="name" id="name" class="form-input" />
             <label for="email">Email:</label>
             <input type="email" placeholder="" name="email" id="email" class="form-input" />
-            <label for="phone">GitHub Link:</label>
-            <input type="tel" placeholder="" name="phone" id="phone" class="form-input" />
-            <label for="phone">LinkedIn Link:</label>
-            <input type="tel" placeholder="" name="phone" id="phone" class="form-input" />
+            <label for="github">GitHub Link:</label>
+            <input type="text" placeholder="" name="github" id="github" class="form-input" />
+            <label for="linkedin">LinkedIn Link:</label>
+            <input type="text" placeholder="" name="linkedin" id="linkedin" class="form-input" />
 
             <form class="box" method="post" action="" enctype="multipart/form-data">
                 <div class="box__input">
@@ -55,14 +55,14 @@
                         data-multiple-caption="{count} files selected" multiple />
 
                 </div>
-                <div class="box__uploading">Uploading…</div>
+                {{!-- <div class="box__uploading">Uploading…</div>
                 <div class="box__success">Done!</div>
-                <div class="box__error">Error! <span></span>.</div>
+                <div class="box__error">Error! <span></span>.</div> --}}
             </form>
 
             </br>
 
-            <button type="submit">
+            <button type="submit" id="submit-form">
                 Next
             </button>
         </form>
@@ -77,3 +77,4 @@
 
 <script src="/JS/login.js"></script>
 <script src="/JS/logout.js"></script>
+<script src="/JS/dashboard.js"></script>
