@@ -78,6 +78,7 @@ router.post("/upload/projectIMG/:id", async (req, res) => {
 router.post("/upload/data", async (req, res) => {
   if (!req.session.currentContentID) {
     UserContent.create({
+      user_id: req.session.user_id,
       portfolio_name: req.body.name,
       portfolio_email: req.body.email,
       portfolio_github_link: req.body.github,
@@ -90,6 +91,7 @@ router.post("/upload/data", async (req, res) => {
   } else if (req.session.currentContentID) {
     UserContent.update(
       {
+        user_id: req.session.user_id,
         portfolio_name: req.body.name,
         portfolio_email: req.body.email,
         portfolio_github_link: req.body.github,
