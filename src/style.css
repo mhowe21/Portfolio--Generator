@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #323334;
+    background-color: #444f5e;
 }
 
 /* Header Style Start */
@@ -16,7 +16,7 @@ body {
     /* padding: 20px; */
     margin: auto;
     font-family: 'garamond';
-    color: #9A9A9E;
+    color: #010101;
     width: 100%;
     align-items: flex-end;
 }
@@ -34,7 +34,7 @@ body {
     justify-content: left;
     /* padding: 20px; */
     font-family: 'garamond';
-    color: #9A9A9E;
+    color: #071425;
     width: 65%;
     margin-left: 20px;
 }
@@ -44,7 +44,8 @@ body {
     flex-direction: row;
     /* justify-content: space-between; */
     vertical-align: bottom;
-    color: #0B084D;
+    /* color: #0B084D; */
+    color: #9197a1;
     padding: 20px;
     width: 35%;
     /* border: 5px; */
