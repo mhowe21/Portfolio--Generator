@@ -30,14 +30,10 @@ app.use(fileUpload());
 app.use(session(sess));
 
 app.engine("handlebars", exphbs());
-let viewPath = path.join(__dirname, "views");
-app.set("views", path);
-
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
 app.use(require("./routes"));
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Live on port: ${PORT}`));
 });
-
-console.log(`The path is ${viewPath}`);
