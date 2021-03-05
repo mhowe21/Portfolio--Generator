@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { User, UserContent } = require("../models");
 
-router.get("", (req, res) => {
+router.get("https://rocky-stream-10071.herokuapp.com/", (req, res) => {
   res.render("home");
 });
 
