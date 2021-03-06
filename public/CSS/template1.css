@@ -5,15 +5,13 @@
 }
 
 body {
-  background-color: #444f5e;
+  background-color: #191919;
 }
 
 /* Header Style Start */
 .heading {
   display: flex;
   flex-direction: row;
-  /* justify-content: left; */
-  /* padding: 20px; */
   margin: auto;
   font-family: "garamond";
   color: #010101;
@@ -26,31 +24,27 @@ body {
   justify-content: center;
   width: 93%;
   margin: auto;
+  margin-top: 25px;
 }
 
 .name {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  /* padding: 20px; */
   font-family: "garamond";
-  color: #071425;
+  color: whitesmoke;
   width: 65%;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .contact {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   vertical-align: bottom;
-  /* color: #0B084D; */
-  color: #9197a1;
+  color: whitesmoke;
   padding: 20px;
   width: 35%;
-  /* border: 5px; */
-  /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .contact h4 {
@@ -60,7 +54,6 @@ body {
 }
 
 p {
-  /* width: 95%; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -79,49 +72,44 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* padding: 20 px; */
   width: 90%;
-  background-color: lightslategrey;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   border: 5px;
+  color: #696b75;
 }
 
 .about-me-heading {
   margin-top: 10px;
-}
-
-.profile-image {
-  width: 30%;
-  min-height: 30%;
-  max-height: 30%;
+  color: #bfc1c2;
 }
 
 .about-me-text {
   width: 70%;
   display: flex;
   flex-direction: column;
+  color: #696b75;
 }
 
 /* .completed { */
 .projects {
   display: flex;
   justify-content: center;
-  /* padding: 20 px; */
   flex-direction: column;
   width: 90%;
-  background-color: lightslategrey;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
   border: 5px;
+  color: #bfc1c2;
 }
 
 .project-heading {
   display: flex;
   justify-content: left;
+  color: #bfc1c2;
 }
 
 .card-row {
@@ -133,7 +121,6 @@ p {
 .project-card {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -146,17 +133,23 @@ p {
   /* adjust width and height of pic */
   min-width: 100px;
   min-height: 100px;
+  display: flex;
+}
+
+.profile-user-image {
+  max-height: 90%;
+  max-width: 90%;
+  display: flex;
 }
 
 .unique {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding: 20 px; */
   width: 90%;
-  background-color: lightslategrey;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
   border: 5px;
+  color: #696b75;
 }
