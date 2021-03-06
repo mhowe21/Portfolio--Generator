@@ -18,6 +18,10 @@ UserContent.init(
         key: "id",
       },
     },
+    template_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
     avatar_image_URI: {
       type: DataTypes.STRING,
       allowNull: true,
@@ -30,7 +34,15 @@ UserContent.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    user_profile_url_1: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     user_profile_img_2: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    user_profile_url_2: {
       type: DataTypes.STRING,
       allowNull: true,
     },
@@ -38,7 +50,23 @@ UserContent.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    user_profile_url_3: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     user_profile_img_4: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    user_profile_url_4: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    user_profile_img_5: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    user_profile_url_5: {
       type: DataTypes.STRING,
       allowNull: true,
     },
