@@ -1,0 +1,80 @@
+<header>
+    <h1>
+        <a href="/">
+            < / anchor>
+        </a>
+    </h1>
+    <nav>
+        <!-- Unordered list element -->
+        <ul>
+            <!-- List item element-->
+            <li>
+                <!-- Anchor element -->
+                <a href="/dashboard">home</a>
+            </li>
+            <li>
+                <a href="dashboard1">create</a>
+            </li>
+            <li>
+                <a href="/portfolios">my sites</a>
+            </li>
+            <li>
+                <a href="/" id="logout">sign out</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- hero/jumbotron -->
+<section class="hero">
+    <div class="hero-cta">
+        <h2>hey there, </br> lets get crazy</h2>
+        <p>
+            seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+            messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+            Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO
+        </p>
+    </div>
+    <div class="hero-form">
+        <h1>Answer Some Questions To Begin</h1>
+        </br>
+        <!-- Add form element -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="" name="name" id="name" class="form-input" />
+            <label for="email">Email:</label>
+            <input type="email" placeholder="" name="email" id="email" class="form-input" />
+            <label for="github">GitHub Link:</label>
+            <input type="text" placeholder="" name="github" id="github" class="form-input" />
+            <label for="linkedin">LinkedIn Link:</label>
+            <input type="text" placeholder="" name="linkedin" id="linkedin" class="form-input" />
+
+            <form class="box" method="post" action="" enctype="multipart/form-data">
+                <div class="box__input">
+                    <input class="box__file" type="file" name="files[]" id="file"
+                        data-multiple-caption="{count} files selected" multiple />
+
+                </div>
+                {{!-- <div class="box__uploading">Uploading…</div>
+                <div class="box__success">Done!</div>
+                <div class="box__error">Error! <span></span>.</div> --}}
+            </form>
+
+            </br>
+
+            <button type="submit" id="submit-form">
+                Next
+            </button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+
+<script src="/JS/login.js"></script>
+<script src="/JS/logout.js"></script>
+<script src="/JS/dashboard.js"></script>
