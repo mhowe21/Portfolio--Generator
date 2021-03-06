@@ -7,6 +7,8 @@ const exphbs = require("express-handlebars");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
+//
+
 const sess = {
   secret: "Super secret secret",
   cookie: {},
@@ -22,11 +24,13 @@ const PORT = process.env.PORT || 3030;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "public")));
+
 app.use(fileUpload());
 app.use(session(sess));
 
 app.engine("handlebars", exphbs());
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
 app.use(require("./routes"));
 
