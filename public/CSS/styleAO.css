@@ -1,0 +1,147 @@
+
+img {
+    border-radius: 15px;
+    max-width: 100%;
+      }
+
+      
+header {
+    padding:20px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:  wrap;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: block;
+    background-image: url("../images/headshottwoo.png");
+    background-size: cover;
+    background-position: center;
+    Background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+    min-height: 100%;
+}
+
+.hero {
+  display: block;
+    padding: 60px;
+    background-image: url("../images/headshottwoo.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    min-height: 100%;
+  }
+
+
+  header nav {
+    margin: 7px 0;}
+  
+  header nav ul{
+    border-radius: 15px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    background-color: grey;
+}
+  
+  header nav ul li a{
+    border-radius: 15px;
+      text-decoration: none;
+    color: aliceblue;
+     padding: 10px 15px;
+     font-weight: lighter;
+     font-size: 1.55vw
+     
+    }   
+  
+  header nav ul li a:hover{
+    text-shadow: none;
+}
+
+body {
+    margin-left: 200px;
+height: 40vh;
+}
+.card {
+  
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 10px;
+    border: none;
+  }
+
+.tiles {
+  max-width: auto;
+  max-height: 180px;
+}
+
+#about-me {
+  text-align: center;
+  justify-content: space;
+  
+}
+section p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+#completed-work{
+  text-align: center;
+}
+#in-progress{
+  text-align: center;
+}
+#contact{
+  text-align: center;
+}
+#links{
+  text-align: center;
+}
+#perks{
+  text-align: center;
+}
+.section-title {
+  border-radius: 15px;
+      text-decoration: none;
+    background-color: grey;
+    color: aliceblue;
+     padding: 10px 15px;
+     font-weight: lighter;
+     font-size: 1.55vw
+    
+}
+
+h1 {
+  color: aliceblue;
+}
+
+section{
+  background-color: aliceblue;
+}
+
+/* css grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.grid-item{
+  border: none;
+}
+
+.card.grid-item {
+  background-color: aliceblue;
+
+  border: none;
+}
