@@ -7,6 +7,11 @@ const file = document.querySelector("#file");
 const submit = document.querySelector("#submit-form");
 const aboutYou = document.querySelector("#about-me-text");
 const templateSelect = document.querySelector("#template");
+const project1Link = document.querySelector("#project-1");
+const project2Link = document.querySelector("#project-2");
+const project3Link = document.querySelector("#project-3");
+const project4Link = document.querySelector("#project-4");
+const project5Link = document.querySelector("#project-5");
 
 submit.addEventListener("click", async (e) => {
   console.log("button pressed");
