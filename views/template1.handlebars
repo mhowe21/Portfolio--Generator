@@ -42,37 +42,53 @@
         <div class="project-heading" id="project-heading">
             <h3>Completed Work</h3>
         </div>
+
         <div class="card-row" id="card-row">
+            {{#if info.user_profile_url_1}}
             <div class="project-card" id="project-card">
                 <h4>Project 1</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 1 image here -->
+                    <a href="{{info.user_profile_url_1}}">{{info.user_profile_url_1}}</a>
                 </div>
             </div>
+            {{/if}}
+            {{#if info.user_profile_url_2}}
             <div class="project-card" id="project-card">
                 <h4>Project 2</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 2 image here -->
+                    <a href="{{info.user_profile_url_2}}">{{info.user_profile_url_2}}</a>
                 </div>
             </div>
+            {{/if}}
+            {{#if info.user_profile_url_3}}
             <div class="project-card" id="project-card">
                 <h4>Project 3</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 3 image here -->
+                    <a href="{{info.user_profile_url_3}}">{{info.user_profile_url_3}}</a>
                 </div>
             </div>
+            {{/if}}
+            {{#if info.user_profile_url_4}}
             <div class="project-card" id="project-card">
                 <h4>Project 4</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 4 image here -->
+                    <a href="{{info.user_profile_url_4}}">{{info.user_profile_url_4}}</a>
                 </div>
+                {{/if}}
             </div>
+            {{#if info.user_profile_url_5}}
             <div class="project-card" id="project-card">
                 <h4>Project 5</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 5 image here -->
+                    <a href="{{info.user_profile_url_5}}">{{info.user_profile_url_5}}</a>
                 </div>
             </div>
+            {{/if}}
         </div>
     </div>
 
@@ -96,12 +112,13 @@
             </div>
         </div>
     </div>
-
+    {{#if info.unique}}
     <div class="unique" id="unique">
         <h3>Something Unique About Me</h3>
         <p>
             <!-- Something unique about you text goes here -->
         </p>
     </div>
+    {{/if}}
 
 </sec>
