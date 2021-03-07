@@ -34,6 +34,6 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
 app.use(require("./routes"));
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ alter: true }).then(() => {
   app.listen(PORT, () => console.log(`Live on port: ${PORT}`));
 });
