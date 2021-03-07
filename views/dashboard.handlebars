@@ -32,9 +32,7 @@
     <div class="hero-cta">
         <h2>hey there, </br> lets get crazy</h2>
         <p>
-            seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
-            messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
-            Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO
+            To get started fill out the form to create a template.
         </p>
     </div>
     <div class="hero-form">
@@ -42,17 +40,9 @@
         </br>
         <!-- Add form element -->
         <form>
-            <label for="name">Name:</label>
-            <input type="text" placeholder="" name="name" id="name" class="form-input" />
-            <label for="email">Email:</label>
-            <input type="email" placeholder="" name="email" id="email" class="form-input" />
-            <label for="github">GitHub Link:</label>
-            <input type="text" placeholder="" name="github" id="github" class="form-input" />
-            <label for="linkedin">LinkedIn Link:</label>
-            <input type="text" placeholder="" name="linkedin" id="linkedin" class="form-input" />
-
             <form class="box" method="post" action="" enctype="multipart/form-data">
                 <div class="box__input">
+                    <label for="file">Upload Profile Photo</label>
                     <input class="box__file" type="file" name="files[]" id="file"
                         data-multiple-caption="{count} files selected" multiple />
 
@@ -61,6 +51,24 @@
                 <div class="box__success">Done!</div>
                 <div class="box__error">Error! <span></span>.</div> --}}
             </form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="" name="name" id="name" class="form-input" />
+            <label for="email">Email:</label>
+            <input type="email" placeholder="" name="email" id="email" class="form-input" />
+            <label for="github">GitHub Link:</label>
+            <input type="text" placeholder="" name="github" id="github" class="form-input" />
+            <label for="linkedin">LinkedIn Link:</label>
+            <input type="text" placeholder="" name="linkedin" id="linkedin" class="form-input" />
+            <p>About you</p>
+            <textarea rows="10" cols="69" id="about-me-text" class="about-me-text"></textarea>
+            <br>
+            <label for="template">Choose a template:</label>
+            <select id="template">
+                <option value="1">Simple 1</option>
+                <option value="2">Featured 2</option>
+
+            </select>
+
 
             </br>
 

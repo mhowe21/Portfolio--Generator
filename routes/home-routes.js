@@ -41,7 +41,9 @@ router.get("/portfolios/:id", (req, res) => {
   }).then((data) => {
     const info = data.get({ plain: true });
     console.log(info);
-    res.render("template1", { info });
+
+    
+    res.render(`template${info.template_id}`, { info });
     //res.json(info);
   });
 });

@@ -5,6 +5,8 @@ const github = document.querySelector("#github");
 const linkedin = document.querySelector("#linkedin");
 const file = document.querySelector("#file");
 const submit = document.querySelector("#submit-form");
+const aboutYou = document.querySelector("#about-me-text");
+const templateSelect = document.querySelector("#template");
 
 submit.addEventListener("click", async (e) => {
   console.log("button pressed");
@@ -35,6 +37,8 @@ function submitForm() {
             email: email.value.trim(),
             github: github.value.trim(),
             linkedin: linkedin.value.trim(),
+            template_id: templateSelect.value.trim(),
+            portfolio_aboutme: aboutYou.value.trim(),
           });
 
           let requestOptions = {
@@ -63,6 +67,8 @@ function submitForm() {
         email: email.value.trim(),
         github: github.value.trim(),
         linkedin: linkedin.value.trim(),
+        template_id: templateSelect.value,
+        portfolio_aboutme: aboutYou.value,
       });
 
       let requestOptions = {

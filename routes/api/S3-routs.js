@@ -83,6 +83,9 @@ router.post("/upload/data", async (req, res) => {
       portfolio_email: req.body.email,
       portfolio_github_link: req.body.github,
       portfolio_linkedin_link: req.body.linkedin,
+      portfolio_aboutme: req.body.portfolio_aboutme,
+      template_id: req.body.template_id,
+
     }).then((data) => {
       req.session.currentContentID = data.id;
       console.log(req.session.currentContentID);
@@ -91,11 +94,13 @@ router.post("/upload/data", async (req, res) => {
   } else if (req.session.currentContentID) {
     UserContent.update(
       {
-        user_id: req.session.user_id,
-        portfolio_name: req.body.name,
-        portfolio_email: req.body.email,
-        portfolio_github_link: req.body.github,
-        portfolio_linkedin_link: req.body.linkedin,
+      user_id: req.session.user_id,
+      portfolio_name: req.body.name,
+      portfolio_email: req.body.email,
+      portfolio_github_link: req.body.github,
+      portfolio_linkedin_link: req.body.linkedin,
+      portfolio_aboutme: req.body.portfolio_aboutme,
+      template_id: req.body.template_id,
       },
       {
         where: {
