@@ -1,21 +1,24 @@
+{{> temp1css}}
 <div class="heading" id="heading">
     <div class="heading-container" id="heading-container">
         <div class="name" id="name">
-            <h1>{{ info.portfolio_name }}</h1>
+            <h1>{{info.portfolio_name}}</h1>
         </div>
         <div class="contact" id="contact">
-            <a href="mailto:{{ info.portfolio_email }}">
-                <h4>Contact</h4>
+            <a href="mailto:{{info.portfolio_email}}">
+                <h4>Contact </h4>
             </a>
-            <a href="{{ info.portfolio_github_link }}">
-                <h4>Github</h4>
+            </br>
+            <a href="https://github.com/{{info.portfolio_github_link}}">
+                <h4>Github </h4>
             </a>
-            <a href="{{ info.portfolio_linkedin_link }}">
-                <h4>LinkedIn</h4>
+            </br>
+            <a href="https://linkedin.com/in/{{info.portfolio_linkedin_link}}">
+                <h4>Linkedin </h4>
             </a>
-
         </div>
     </div>
+</div>
 </div>
 <sec class="container" id="container">
     <div class="about-me" id="about-me">
@@ -24,18 +27,12 @@
                 <h2>About Me</h2>
             </div>
             <p>
-                <!-- Insert about me text here -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                <!-- About me text goes here -->
             </p>
         </div>
         <div class="profile-image" id="profile-image">
             <!-- Insert image here -->
-            <img src={{info.avatar_image_URI}}>
-            <p>image placeholder</p>
+            <img src={{info.avatar_image_URI}} class="profile-user-image">
         </div>
     </div>
 
@@ -49,35 +46,30 @@
                 <h4>Project 1</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 1 image here -->
-                    <h5>project 1 image placeholder</h5>
                 </div>
             </div>
             <div class="project-card" id="project-card">
                 <h4>Project 2</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 2 image here -->
-                    <h5>project 2 image placeholder</h5>
                 </div>
             </div>
             <div class="project-card" id="project-card">
                 <h4>Project 3</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 3 image here -->
-                    <h5>project 3 image placeholder</h5>
                 </div>
             </div>
             <div class="project-card" id="project-card">
                 <h4>Project 4</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 4 image here -->
-                    <h5>project 4 image placeholder</h5>
                 </div>
             </div>
             <div class="project-card" id="project-card">
                 <h4>Project 5</h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert project 5 image here -->
-                    <h5>project 5 image placeholder</h5>
                 </div>
             </div>
         </div>
@@ -93,27 +85,21 @@
                 <h4>Work in Progress </h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert in progress 1 image here -->
-                    <h5>inprogress 1 image placeholder</h5>
                 </div>
             </div>
             <div class="project-card" id="project-card">
                 <h4>Work in Progress </h4>
                 <div class="project-image" id="project-image">
                     <!-- Insert inprogress 2 image here -->
-                    <h5>in progress 2 image placeholder</h5>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="unique" id="unique">
-        <h3>Something Unique About You</h3>
+        <h3>Something Unique About Me</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
+            <!-- Something unique about you text goes here -->
         </p>
     </div>
 
