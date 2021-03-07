@@ -551,6 +551,11 @@ section {
   display: flex;
 }
 
+.about-me-text {
+  display: flex;
+  max-width: 95%;
+}
+
 /* Service Grid Start */
 
 .service-grid-container {
