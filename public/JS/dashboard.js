@@ -37,8 +37,8 @@ function submitForm() {
             email: email.value.trim(),
             github: github.value.trim(),
             linkedin: linkedin.value.trim(),
-            template_id: templateSelect.value,
-            portfolio_aboutme: aboutYou.value,
+            template_id: templateSelect.value.trim(),
+            portfolio_aboutme: aboutYou.value.trim(),
           });
 
           let requestOptions = {
