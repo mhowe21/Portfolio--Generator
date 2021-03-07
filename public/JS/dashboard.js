@@ -7,9 +7,14 @@ const file = document.querySelector("#file");
 const submit = document.querySelector("#submit-form");
 const aboutYou = document.querySelector("#about-me-text");
 const templateSelect = document.querySelector("#template");
+const project1Link = document.querySelector("#project-1");
+const project2Link = document.querySelector("#project-2");
+const project3Link = document.querySelector("#project-3");
+const project4Link = document.querySelector("#project-4");
+const project5Link = document.querySelector("#project-5");
 
 submit.addEventListener("click", async (e) => {
-  console.log("button pressed");
+  //console.log("button pressed");
   await submitForm();
 });
 
@@ -39,8 +44,13 @@ function submitForm() {
             linkedin: linkedin.value.trim(),
             template_id: templateSelect.value.trim(),
             portfolio_aboutme: aboutYou.value.trim(),
+            project_1_link: project1Link.value.trim(),
+            project_2_link: project2Link.value.trim(),
+            project_3_link: project3Link.value.trim(),
+            project_4_link: project4Link.value.trim(),
+            project_5_link: project5Link.value.trim(),
           });
-
+          console.log(`the body is ${body}`);
           let requestOptions = {
             method: "POST",
             headers: headers,
@@ -67,10 +77,15 @@ function submitForm() {
         email: email.value.trim(),
         github: github.value.trim(),
         linkedin: linkedin.value.trim(),
-        template_id: templateSelect.value,
-        portfolio_aboutme: aboutYou.value,
+        template_id: templateSelect.value.trim(),
+        portfolio_aboutme: aboutYou.value.trim(),
+        project_1_link: project1Link.value.trim(),
+        project_2_link: project2Link.value.trim(),
+        project_3_link: project3Link.value.trim(),
+        project_4_link: project4Link.value.trim(),
+        project_5_link: project5Link.value.trim(),
       });
-
+      console.log(`the body is ${body}`);
       let requestOptions = {
         method: "POST",
         headers: headers,

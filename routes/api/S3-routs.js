@@ -85,7 +85,11 @@ router.post("/upload/data", async (req, res) => {
       portfolio_linkedin_link: req.body.linkedin,
       portfolio_aboutme: req.body.portfolio_aboutme,
       template_id: req.body.template_id,
-
+      user_profile_url_1: project_1_link,
+      user_profile_url_2: project_2_link,
+      user_profile_url_3: project_3_link,
+      user_profile_url_4: project_4_link,
+      user_profile_url_5: project_5_link,
     }).then((data) => {
       req.session.currentContentID = data.id;
       console.log(req.session.currentContentID);
@@ -94,13 +98,18 @@ router.post("/upload/data", async (req, res) => {
   } else if (req.session.currentContentID) {
     UserContent.update(
       {
-      user_id: req.session.user_id,
-      portfolio_name: req.body.name,
-      portfolio_email: req.body.email,
-      portfolio_github_link: req.body.github,
-      portfolio_linkedin_link: req.body.linkedin,
-      portfolio_aboutme: req.body.portfolio_aboutme,
-      template_id: req.body.template_id,
+        user_id: req.session.user_id,
+        portfolio_name: req.body.name,
+        portfolio_email: req.body.email,
+        portfolio_github_link: req.body.github,
+        portfolio_linkedin_link: req.body.linkedin,
+        portfolio_aboutme: req.body.portfolio_aboutme,
+        template_id: req.body.template_id,
+        user_profile_url_1: req.body.project_1_link,
+        user_profile_url_2: req.body.project_2_link,
+        user_profile_url_3: req.body.project_3_link,
+        user_profile_url_4: req.body.project_4_link,
+        user_profile_url_5: req.body.project_5_link,
       },
       {
         where: {
