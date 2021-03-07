@@ -87,7 +87,7 @@ UserContent.init(
       allowNull: true,
     },
     portfolio_aboutme: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: true,
     },
   },
