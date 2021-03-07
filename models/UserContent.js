@@ -86,6 +86,10 @@ UserContent.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    portfolio_aboutme: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     sequelize,
