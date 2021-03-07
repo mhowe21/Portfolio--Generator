@@ -6,13 +6,13 @@
   This creative app called "Anchor" allows you to create an account and/or sign in to construct a personal portfolio. After answering some questions about yourself and your craft, click next to see your generated portfolio. 
 
   ![image](/assets/images/app.PNG)
-  Employee Tracker Options
+    Anchor Landing Page
 
   ![image](/assets/images/app.PNG)
-  Employee Tracker Options
+    Anchor Login Page
 
   ![image](/assets/images/app.PNG)
-  Employee Tracker Options
+    Anchor Forms
 
   
   ## Table of Contents
