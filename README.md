@@ -5,13 +5,13 @@
   ## Description
   This creative app called "Anchor" allows you to create an account and/or sign in to construct a personal portfolio. After answering some questions about yourself and your craft, click next to see your generated portfolio. 
 
-  ![image](/assets/images/app.PNG)
+  ![image](/client/style/images/landing.PNG)
     Anchor Landing Page
 
-  ![image](/assets/images/app.PNG)
+  ![image](/client/style/images/login.PNG)
     Anchor Login Page
 
-  ![image](/assets/images/app.PNG)
+  ![image](/client/style/images/form.PNG)
     Anchor Forms
 
   
