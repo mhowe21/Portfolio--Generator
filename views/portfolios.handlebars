@@ -1,13 +1,58 @@
 {{> base}}
+
+<header>
+    <h1>
+        <a href="/">
+            < / anchor>
+        </a>
+    </h1>
+    <nav>
+        <!-- Unordered list element -->
+        <ul>
+            <!-- List item element-->
+            <li>
+                <!-- Anchor element -->
+                <a href="/dashboard">home</a>
+            </li>
+            <li>
+                <a href="dashboard1">create</a>
+            </li>
+            <li>
+                <a href="/portfolios">my sites</a>
+            </li>
+            <li>
+                <a href="/" id="logout">sign out</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
 {{#if info.length}}
-<section>
-    <h2>Prior portfolios</h2>
-    <ol>
+<!-- "meet the trainers" section -->
+<section id="meet-the-trainers">
+  <div class="flex-row">
+    <h2 class="section-title primary-border">my portfolios</h2>
+  </div>
+  <div class="trainers">
+    <article class="trainer">
+      <div class="trainer-bio">
+        <h3>Arron Stephens</h3>
+        <h4>Speed / Strength</h4>
         {{#each info as |info|}}
-        <li>
-            <a href="/portfolios/{{info.id}}" class="portfolio">Portfolio {{info.portfolio_name}}</a>
-        </li>
+        <h1>
+            <a href="/portfolios/{{info.id}}" class="portfolio"> {{info.portfolio_name}}</a>
+        </h1>
         {{/each}}
-    </ol>
+      </div>
+    </article>
+
+  </div>
 </section>
+
 {{/if}}
+
+
