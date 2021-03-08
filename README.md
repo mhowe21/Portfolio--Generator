@@ -30,7 +30,7 @@
   If you have any questions, you can reach out to us by following the links below to our GitHub profiles.
 
   ## Team 
-  Mason Howe () 
-  Nick Ovalles ()
-  Michelle Peterson ()
-  Allec Ortega () 
+  Mason Howe [GitHub Profile](https://github.com/mhowe21)
+  Nick Ovalles [GitHub Profile](https://github.com/lauramichellepeterson)
+  Michelle Peterson [GitHub Profile](https://github.com/lauramichellepeterson)
+  Allec Ortega [GitHub Profile](https://github.com/Aort69)
